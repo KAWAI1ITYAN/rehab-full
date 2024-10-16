@@ -1,0 +1,7 @@
+.block {
+    @include flex(center, center, 30px, unset, wrap);
+}
+
+.specs {
+    margin-top: 100px;
+}

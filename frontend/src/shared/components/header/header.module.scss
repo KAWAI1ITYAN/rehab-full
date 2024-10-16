@@ -1,0 +1,51 @@
+.header {
+  width: 100%;
+  min-width: 500px;
+
+  &_text {
+    padding: 5px 300px;
+    @include flex(center, space-between);
+    background-color: rgba(48, 53, 62, 1);
+    max-width: unset;
+    margin: 0 auto;
+
+    @media (max-width: 1400px) {
+      @include flex(center, unset, 20px, column);
+      width: 100%;
+    }
+
+      @media (max-width: 550px) {
+        width: 1000px;
+        margin: 0 auto;
+        padding: 20px 100px;
+      }
+  }
+}
+
+.logo {
+  text-decoration: none;
+  @include flex(center);
+
+  img {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+.name {
+  @include font(22px, unset, unset, #fff);
+}
+
+.link {
+  @include font(18px, unset, unset, #fff);
+  text-decoration: none;
+}
+
+.links {
+  @include flex(center, space-between, 64px);
+
+  @media (max-width: 1400px) {
+    width: 100%;
+    @include flex(center, space-between);
+  }
+}
