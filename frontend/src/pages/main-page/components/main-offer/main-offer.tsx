@@ -7,7 +7,6 @@ export const MainOffer = () => {
   return (
     <div className={styles.block}>
       <h1>Мы предлагаем</h1>
-      <p>ИНДИВИДУАЛЬНЫЙ ПОДБОР ПРОГРАММЫ ЛЕЧЕНИЯ</p>
 
       <div className={styles.block_items}>
         {offerData.map((item, index) => (
